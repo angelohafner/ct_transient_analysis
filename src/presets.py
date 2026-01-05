@@ -7,9 +7,9 @@ PRESETS = {
         "description": "Burden baixo e corrente moderada. Espera-se i2(t) ~ is(t), ie pequeno e pouca distorção.",
         "inp": {
             "f_hz": 60.0,
-            "t_end": 0.45,
+            "t_end": 0.25,
             "pre_fault_cycles": 1.0,
-            "dt": 1.0 / 12000.0,
+            "dt": 13e-6,
             "S": 22.0,
             "Vs": 400.0,
             "N": 240.0,
@@ -26,7 +26,7 @@ PRESETS = {
         "description": "Burden alto e corrente elevada. Espera-se distorção forte em i2(t) e ie elevado.",
         "inp": {
             "f_hz": 60.0,
-            "t_end": 0.45,
+            "t_end": 0.25,
             "pre_fault_cycles": 1.0,
             "dt": 1.0 / 24000.0,
             "S": 22.0,
@@ -45,7 +45,7 @@ PRESETS = {
         "description": "Off alto e X/R típico. Espera-se saturação mais intensa no primeiro semiciclo.",
         "inp": {
             "f_hz": 60.0,
-            "t_end": 0.45,
+            "t_end": 0.25,
             "pre_fault_cycles": 1.0,
             "dt": 1.0 / 24000.0,
             "S": 22.0,
@@ -64,7 +64,7 @@ PRESETS = {
         "description": "Aplica remanência em λ. Espera-se deslocamento e assimetria adicional no fluxo e correntes.",
         "inp": {
             "f_hz": 60.0,
-            "t_end": 0.45,
+            "t_end": 0.25,
             "pre_fault_cycles": 1.0,
             "dt": 1.0 / 24000.0,
             "S": 22.0,

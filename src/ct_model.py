@@ -15,7 +15,7 @@ class CTSatModel:
         theta = np.linspace(0.0, 2.0 * math.pi, int(n_points))
         y = np.sin(theta)
         y = np.power(y, 2.0 * float(S))
-        integral = np.trapz(y, theta)
+        integral = np.trapezoid(y, theta)
         irms_sq = (1.0 / (2.0 * math.pi)) * float(integral)
         rp = math.sqrt(irms_sq)
         return float(rp)
